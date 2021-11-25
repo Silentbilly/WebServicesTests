@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="TestSuite" parallel="tests">
+  <test name="Verify code">
+    <classes>
+      <class name="com.epam.auto.ws.test.VerifyHttpStatusCode"/>
+    </classes>
+  </test>
+  <test name="Verify body">
+    <classes>
+      <class name="com.epam.auto.ws.test.VerifyResponseBody"/>
+    </classes>
+  </test>
+  <test name="Verify header">
+    <classes>
+      <class name="com.epam.auto.ws.test.VerifyResponseHeader"/>
+    </classes>
+  </test>
+</suite>
